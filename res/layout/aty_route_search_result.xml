@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#f6f6f6"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <Button
+            android:id="@+id/btnBackToAtyRouteSearch"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/btn_text_shape"
+            android:gravity="center"
+            android:text="返回"
+            android:textColor="@color/btn_text_color"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="换乘方案"
+            android:textSize="16sp" 
+            android:textStyle="bold"/>
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="@android:color/darker_gray" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#ffffff"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/tvBtnSortPathByLessTime"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/btn_text_shape"
+            android:text="最快"
+            android:textColor="#929292"
+            android:textSize="16sp" 
+            android:padding="10dp"
+             android:gravity="center"/>
+
+        <TextView
+            android:id="@+id/tvBtnSortPathByLessBusLine"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/btn_text_shape"
+            android:text="少换乘"
+            android:textColor="#929292"
+            android:textSize="16sp" 
+            android:padding="10dp"
+            android:gravity="center"/>
+
+        <TextView
+            android:id="@+id/tvBtnSortPathByLessWalkDistance"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/btn_text_shape"
+            android:text="少步行"
+            android:textColor="#929292"
+            android:textSize="16sp" 
+            android:padding="10dp"
+             android:gravity="center"/>
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@android:color/darker_gray" />
+
+    <ListView
+        android:id="@+id/lvPathsList"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" 
+        android:divider="@null">
+    </ListView>
+
+</LinearLayout>

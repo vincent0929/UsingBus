@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_vertical"
+    android:orientation="horizontal" 
+    android:padding="10dp">
+
+    <TextView
+        android:id="@+id/tvItemBusStationNum"
+        android:layout_width="26dp"
+        android:layout_height="26dp"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="7dp"
+        android:background="@drawable/station_item_num"
+        android:gravity="center"
+        android:text="01" />
+
+    <TextView
+        android:id="@+id/tvItemBusStationName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="5dp"
+        android:background="@drawable/text_bus_station_item_shape"
+        android:padding="10dp"
+        android:text="沈阳理工大学"
+        android:textSize="16sp" />
+
+</LinearLayout>

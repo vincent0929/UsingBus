@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#f6f6f6"
+    android:orientation="vertical"
+    android:padding="10dp" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/layout_frame"
+        android:orientation="vertical"
+        android:padding="10dp" >
+
+        <TextView
+            android:id="@+id/tvBuslineNearbyName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="238路"
+            android:textColor="#007aff"
+            android:textSize="16sp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="当前："
+                android:textSize="13sp" />
+
+            <TextView
+                android:id="@+id/tvBusStationNearbyName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="沈阳理工大学"
+                android:textSize="13sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="终点："
+                android:textSize="13sp" />
+
+            <TextView
+                android:id="@+id/tvBusLineNearbyTerminalStationName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="沈阳北站"
+                android:textSize="13sp" />
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>
